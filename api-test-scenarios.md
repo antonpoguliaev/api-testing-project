@@ -6,9 +6,11 @@
 - Verify response structure
 - Verify behavior for non-existing user
 - Verify response status codes
+- Verify response data types
 
 ## Posts endpoint
 
-- Verify creating new post
-- Verify retrieving posts
-- Verify response JSON structure
+- Verify creating a new post with valid data
+- Verify API returns status code 201 when post is created
+- Verify response JSON structure for created post
+- Verify behavior when creating post with invalid data (empty title)
