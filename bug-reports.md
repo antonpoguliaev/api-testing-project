@@ -2,19 +2,26 @@
 
 ## Bug Report 1
 
-Title: API returns empty object for non-existing user
+Title: API allows creating post with empty title field
 
 Endpoint:
-GET /users/999
+POST /posts
 
 Steps to reproduce:
-1. Send GET request to /users/999
+1. Send POST request to /posts
+2. Use request body:
+
+{
+  "title": "",
+  "body": "testing API",
+  "userId": 1
+}
 
 Expected result:
-API should return 404 Not Found
+API should validate input data and return an error response (400 Bad Request).
 
 Actual result:
-API returns status 200 with empty object
+API creates a post successfully and returns status code 201.
 
-Severity: Low
-Priority: Low
+Severity: Medium  
+Priority: Medium
