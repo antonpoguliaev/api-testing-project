@@ -54,3 +54,9 @@ The goal of this project is to demonstrate practical skills in:
 - writing test cases
 - reporting bugs
 - working with Postman
+
+- ## Example API Request
+
+Example of API testing using Postman.
+
+![Postman example](postman-example.png)
