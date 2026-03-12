@@ -41,3 +41,17 @@ Field types:
 - id → number
 - name → string
 - email → string
+
+## Test Case 3
+
+Title: Verify API returns 404 for non-existing user
+
+Endpoint:
+GET /users/999
+
+Steps:
+1. Send GET request to /users/999
+
+Expected result:
+Status code: 404 Not Found
+Response body indicates that user does not exist
